@@ -1,11 +1,12 @@
 return {
   plugins = {
     {
-      "stevedylandev/flexoki-nvim",
+      "kepano/flexoki-neovim",
       name = "flexoki",
     },
   },
   polish = function()
+    vim.cmd('colorscheme flexoki-dark')
     vim.opt.clipboard = "unnamedplus"
   
     if vim.fn.has('wsl') == 1 then
